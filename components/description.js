@@ -39,10 +39,9 @@ const StyledGithubBadge = styled(GithubBadge)`
 const Description = () => {
     return (
         <Container>
-            <h1>TeamSpeak 5 Channel Image Generator</h1>
+            <h1>TeamSpeak 6 Channel Image Generator</h1>
             <div className={'p'}>Simple interactive tool for generating background images for channels in
-                new <a href="https://teamspeak.com/en/downloads/#ts5" target={'_blank'} rel="noopener">TeamSpeak 5 beta
-                    client</a>.
+                <a href="https://teamspeak.com/en/teamspeak6/" target={'_blank'} rel="noopener"> TeamSpeak 6</a>.
                 Upload any image and it will be resized and split into multiple images that you can simply use as
                 banners on your channels.
             </div>

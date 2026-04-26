@@ -189,8 +189,9 @@ const Upload = () => {
                     Image formats that are supported depends on your browser but in general all modern image formats
                     should work fine.
                     Animated banners are not yet supported and they will be converted to static one.
-                    Output images are in resolution <Code>500x22</Code> pixels so optimal size for the input image is
-                    width <Code>500px</Code> and height that can be divided evenly.
+                    Output images are in resolution <Code>462x40</Code> pixels so optimal size for the input image is
+                    width <Code>462px</Code> and height that is a multiple of <Code>44px</Code> (e.g. 220px for 5
+                    channels, 264px for 6 channels).
                 </FileSupportCallout>
                 <Col $width={'50%'}>
                     <FormGroup
