@@ -11,7 +11,7 @@ const ControlsWrapper = styled.div`
 `
 
 const RoomWrapper = styled.div`
-  height: ${({$isSpacer}) => $isSpacer ? 26 : 30}px;
+  height: ${({$isSpacer}) => $isSpacer ? 30 : 34}px;
   margin-left: ${({$depthOffset}) => $depthOffset}px;
   width: calc(100% - ${({$depthOffset}) => $depthOffset});
   display: flex;
@@ -35,7 +35,7 @@ const RoomWrapper = styled.div`
 const RoomContainer = styled.div`
   background-color: ${({$isSpacer}) => $isSpacer ? 'none' : '#1c2538'};
   border-radius: 5px;
-  height: ${({$isSpacer}) => $isSpacer ? 16 : 22}px;
+  height: ${({$isSpacer}) => $isSpacer ? 20 : 24}px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -112,7 +112,7 @@ const StyledRoomButton = styled(RoomButton)`
 `
 
 /**
- * Renders one room in the preview. It should be rendered exactly the same way as in TeamSpeak 5 Client.
+ * Renders one room in the preview. It should be rendered exactly the same way as in TeamSpeak 6 Client.
  *
  * @param name Name of the room
  * @param image Background image of the room (URL)
