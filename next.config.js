@@ -1,7 +1,7 @@
 const isProd = process.env.NODE_ENV === 'production'
-
 module.exports = {
-    basePath: isProd ? '/ts5-channel-image-generator' : '',
+    output: 'export',
+    basePath: isProd ? '/ts6-channel-image-generator' : '',
     compiler: {
         styledComponents: true,
     }
