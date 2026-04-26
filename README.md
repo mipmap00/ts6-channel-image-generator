@@ -2,7 +2,7 @@
 **Simple tool 🔨 for generating TeamSpeak 5 channel images 🖼️**
 
 ## ✨ Try it out 
-
+适配TS6
 You can make your TeamSpeak server more cool right now!
 Just click [here to use the app](https://pitkes22.github.io/ts5-channel-image-generator/)! 👈👈
 
