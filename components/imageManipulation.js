@@ -220,17 +220,20 @@ const generateImages = (inputFile, options, canvas, image, rooms, cb) => {
         const room = rooms[i];
         const xOffset = room.depth * CHANNEL_DEPTH_OFFSET;
 
-        const channelHeight = getChannelHeight(room.spacer, options.ignoreSpacing);
+        // imageHeight: the actual pixel height of the generated image (= TS6 image element height)
+        // rowHeight:   how far to advance y in the source (= full TS6 row height, includes the gap)
+        const imageHeight = getChannelHeight(room.spacer, true);
+        const rowHeight = getChannelHeight(room.spacer, options.ignoreSpacing);
 
         result.push(getClippedRegion(
             canvas, image,
             xOffset - options.xOffset, options.yOffset + y,
-            inputFile.width, channelHeight,
-            channelHeight,
+            inputFile.width, imageHeight,
+            imageHeight,
             options.backgroundColor)
         )
 
-        y += channelHeight;
+        y += rowHeight;
     }
     cb(result);
 }
