@@ -11,7 +11,7 @@ const ControlsWrapper = styled.div`
 `
 
 const RoomWrapper = styled.div`
-  height: ${({$isSpacer}) => $isSpacer ? 30 : 34}px;
+  height: ${({$isSpacer}) => $isSpacer ? 52 : 44}px;
   margin-left: ${({$depthOffset}) => $depthOffset}px;
   width: calc(100% - ${({$depthOffset}) => $depthOffset});
   display: flex;
@@ -35,7 +35,7 @@ const RoomWrapper = styled.div`
 const RoomContainer = styled.div`
   background-color: ${({$isSpacer}) => $isSpacer ? 'none' : '#1c2538'};
   border-radius: 5px;
-  height: ${({$isSpacer}) => $isSpacer ? 20 : 24}px;
+  height: ${({$isSpacer}) => $isSpacer ? 48 : 40}px;
   width: 100%;
   display: flex;
   align-items: center;
